@@ -11,7 +11,7 @@ from urllib.request import urlopen
 url = "http://www.baidu.com"
 
 headers = {
-	"Use_Agert": "Mozilla/5.0 (Windows NT 6.1; WOW64; rv:66.0) Gecko/20100101 Firefox/66.0"
+	"User_Agent": "Mozilla/5.0 (Windows NT 6.1; WOW64; rv:66.0) Gecko/20100101 Firefox/66.0"
 }
 
 request = Request(url, headers = headers)
@@ -20,7 +20,7 @@ response = urlopen(request)
 
 # read() 方法读取文件里的全部内容，返回bytes类型
 info = response.read()  
-#print(info.decode()) 
+# print(info.decode()) 
 
 # 打印状态码   
 print(response.getcode())
