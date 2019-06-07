@@ -23,17 +23,17 @@ def get_html(url):
     # 创建opener
     opener = build_opener(handler)
 
-    # 临时使用创建的opener
-    # response = opener.open(request)
+    临时使用创建的opener
+    response = opener.open(request)
 
     # 安装Opener
-    install_opener(opener)
+    # install_opener(opener)
     # 使用安装的Opener
-    response = urlopen(url)
+    # response = urlopen(url)
 
     # 读取相应信息并解码
     htmldata = response.read().decode()
-    print(htmldata)
+   
     return htmldata
 
 
@@ -49,9 +49,9 @@ def save_html(html_data):
 def main():
 
     # 测试用url
-    url = "http://httpbin.org/get"
+    # url = "http://httpbin.org/get"
 
-    # url = "https://blog.csdn.net/lwhsyit/article/details/80583941"
+    url = "https://blog.csdn.net/lwhsyit/article/details/80583941"
 
     html_data = get_html(url)
     save_html(html_data)
