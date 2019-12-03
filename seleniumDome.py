@@ -35,11 +35,11 @@ class douban_spider(object):
         # # 输入密码账号
         input1 = browser.find_element_by_xpath('//*[@id="username"]')
         input1.clear()
-        input1.send_keys("13337638901")
+        input1.send_keys("***********")
 
         input2 = browser.find_element_by_xpath('//*[@id="password"]')
         input2.clear()
-        input2.send_keys("pengyefei")
+        input2.send_keys("***********")
 
         # 登录
         bottom = browser.find_element_by_class_name('account-form-field-submit ')
